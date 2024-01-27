@@ -3,6 +3,7 @@
    display: flex;/*横並び */
    justify-content: space-between;/*等間隔に並べる*/
    max-width: 960px;
+   gap: 20px;
    
     }
 
@@ -33,11 +34,11 @@ nav{
     justify-content:space-around;/*均等に間隔をあけて配置*/
     max-width: 960px; 
    }
-
-nav li{
-    display: inline-block;/*横並び・横幅・高さや余白を調整*/
+nav ul{
+    display: flex;/*横並び */
+    }
+nav li+li{
     border-left: 1px solid;
-    
    }
 nav a{
     color: #2e2c2c;
@@ -50,12 +51,16 @@ nav a{
         text-align:left /*左寄せ*/
     }
     nav ul{
+        flex-direction: column;/*子要素を上から下に配置*/
         justify-content:space-around;/*均等に間隔をあけて配置*/
     }
     nav li{
-        border-left: none;
         border-bottom: 1px solid;
         margin: 0;  
+        padding: 10px;
+    }
+    nav li+li{
+        border-left: none;
     }
 }
     
