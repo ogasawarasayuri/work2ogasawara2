@@ -3,6 +3,7 @@
    display: flex;/*横並び */
    justify-content: space-between;/*等間隔に並べる*/
    max-width: 960px;
+   margin: 0 auto;
    gap: 20px;
    
 }
@@ -20,7 +21,9 @@
     justify-content: space-between;/*等間隔に並べる*/
     row-gap: 20px;
     max-width: 960px;
+    margin: 0 auto;
 }
+    
 
 .item{
     background: red;
@@ -28,15 +31,14 @@
     height: 300px;
     
 }
-
 .header{
-    align-items:center;
     display: flex;/*横並び */
     justify-content:space-around;/*均等に間隔をあけて配置*/ 
     max-width: 960px; 
 }
 nav ul{
     display: flex;/*横並び */
+    padding: 10px;
     
 }
 nav li+li{
@@ -48,7 +50,7 @@ nav a{
 }
     
 @media screen and (max-width:767px){
-    nav{
+    .header{
         flex-direction: column;/*子要素を上から下に配置*/
         text-align:left /*左寄せ*/
     }
@@ -58,8 +60,8 @@ nav a{
     }
     nav li{
         border-bottom: 1px solid;
-        margin: 0;  
-        padding: 10px;
+        margin: 0;
+        padding: 10px 10px 10px 0px;
     }
     nav li+li{
         border-left: none;

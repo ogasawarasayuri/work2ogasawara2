@@ -14,7 +14,7 @@ p,
 div,
 dl {
     margin: 0;
-    padding: 0px;
+    padding: 0;
     line-height: 1;
     /*デフォルトの文字色、font-familyを予め当てておく*/
     color: #4c4c4c;
