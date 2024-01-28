@@ -5,14 +5,14 @@
    max-width: 960px;
    gap: 20px;
    
-    }
+}
 
 .box{
     background: blue;
     width: 300px;
     height: 300px;
     
-    }
+}
 
 .red{
     display: flex;/*横並び */
@@ -20,30 +20,32 @@
     justify-content: space-between;/*等間隔に並べる*/
     row-gap: 20px;
     max-width: 960px;
-    }
+}
 
 .item{
     background: red;
     width: 300px;
     height: 300px;
     
-    }
+}
 
-nav{
+.header{
+    align-items:center;
     display: flex;/*横並び */
-    justify-content:space-around;/*均等に間隔をあけて配置*/
+    justify-content:space-around;/*均等に間隔をあけて配置*/ 
     max-width: 960px; 
-   }
+}
 nav ul{
     display: flex;/*横並び */
-    }
+    
+}
 nav li+li{
     border-left: 1px solid;
-   }
+}
 nav a{
     color: #2e2c2c;
     padding: 10px;
-    }
+}
     
 @media screen and (max-width:767px){
     nav{
